@@ -5,7 +5,9 @@ This is the code and data for our paper：“Chinese Medical Concept Normalizati
 The code for thirteen basic model experiments is published
 
 CNN Link: https://pan.quark.cn/s/3938563c1667 Extract code: h4GK
+
 CNN+AT Link: https://pan.quark.cn/s/d41c212c0a0a Extract code: LwG1
+
 GRU Link：https://pan.quark.cn/s/506237a235d0 Extract code：RK35
 GRU+AT Link：https://pan.quark.cn/s/506237a235d0 Extract code：RK35
 LINUXS Link：https://pan.quark.cn/s/2a867f2a1206 Extract code：sjJt
