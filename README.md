@@ -3,7 +3,7 @@ This is the code and data for our paper：“Chinese Medical Concept Normalizati
 
 # Requirements
 We have a requirements.txt file in each code download link, which allows you to run the following code after downloading：
-  pip install -r requirements.txt
+      pip install -r requirements.txt
 
 # Basic experiment
 The code for thirteen basic model experiments is published
