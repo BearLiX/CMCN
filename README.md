@@ -9,7 +9,234 @@ pip install -r requirements.txt
 
 # Run
 Each download link will include a complete model and the trained model. After downloading to local and installing the running environment, training can be performed through "bert_model_train.py", or testing can be performed through "bert_model_test.py", The expected structure of files is (Below is an example of the directory tree for "Multi_task_CNN_BERT（涉及了带辅助任务和不带辅助任务的" ):<br>
-
+```
+├─.idea
+│  └─inspectionProfiles
+├─1
+│  ├─.idea
+│  │  └─inspectionProfiles
+│  ├─bert
+│  │  └─__pycache__
+│  ├─data
+│  │  └─JB
+│  ├─model
+│  │  ├─bert
+│  │  └─chinese_L-12_H-768_A-12
+│  ├─util
+│  │  └─__pycache__
+│  └─__pycache__
+├─1_dict
+│  ├─bert
+│  │  └─__pycache__
+│  ├─data
+│  │  └─JB
+│  ├─model
+│  │  ├─bert
+│  │  └─chinese_L-12_H-768_A-12
+│  ├─util
+│  │  └─__pycache__
+│  └─__pycache__
+├─2
+│  ├─bert
+│  │  └─__pycache__
+│  ├─data
+│  │  └─JB
+│  ├─model
+│  │  ├─bert
+│  │  └─chinese_L-12_H-768_A-12
+│  ├─util
+│  │  └─__pycache__
+│  └─__pycache__
+├─2_dict
+│  ├─bert
+│  │  └─__pycache__
+│  ├─data
+│  │  └─JB
+│  ├─model
+│  │  ├─bert
+│  │  └─chinese_L-12_H-768_A-12
+│  ├─util
+│  │  └─__pycache__
+│  └─__pycache__
+├─3
+│  ├─bert
+│  │  └─__pycache__
+│  ├─data
+│  │  └─JB
+│  ├─model
+│  │  ├─bert
+│  │  └─chinese_L-12_H-768_A-12
+│  ├─util
+│  │  └─__pycache__
+│  └─__pycache__
+├─3_dict
+│  ├─bert
+│  │  └─__pycache__
+│  ├─data
+│  │  └─JB
+│  ├─model
+│  │  ├─bert
+│  │  └─chinese_L-12_H-768_A-12
+│  ├─util
+│  │  └─__pycache__
+│  └─__pycache__
+├─4
+│  ├─bert
+│  │  └─__pycache__
+│  ├─data
+│  │  └─JB
+│  ├─model
+│  │  ├─bert
+│  │  └─chinese_L-12_H-768_A-12
+│  ├─util
+│  │  └─__pycache__
+│  └─__pycache__
+├─4_dict
+│  ├─bert
+│  │  └─__pycache__
+│  ├─data
+│  │  └─JB
+│  ├─model
+│  │  ├─bert
+│  │  └─chinese_L-12_H-768_A-12
+│  ├─util
+│  │  └─__pycache__
+│  └─__pycache__
+├─5
+│  ├─bert
+│  │  └─__pycache__
+│  ├─data
+│  │  └─JB
+│  ├─model
+│  │  ├─bert
+│  │  └─chinese_L-12_H-768_A-12
+│  ├─util
+│  │  └─__pycache__
+│  └─__pycache__
+├─5_dict
+│  ├─bert
+│  │  └─__pycache__
+│  ├─data
+│  │  └─JB
+│  ├─model
+│  │  ├─bert
+│  │  └─chinese_L-12_H-768_A-12
+│  ├─util
+│  │  └─__pycache__
+│  └─__pycache__
+└─DICT
+    ├─ccks
+    │  ├─1_dict
+    │  │  ├─bert
+    │  │  │  └─__pycache__
+    │  │  ├─data
+    │  │  │  └─JB
+    │  │  ├─model
+    │  │  │  ├─bert
+    │  │  │  └─chinese_L-12_H-768_A-12
+    │  │  ├─util
+    │  │  │  └─__pycache__
+    │  │  └─__pycache__
+    │  ├─2_dict
+    │  │  ├─bert
+    │  │  │  └─__pycache__
+    │  │  ├─data
+    │  │  │  └─JB
+    │  │  ├─model
+    │  │  │  ├─bert
+    │  │  │  └─chinese_L-12_H-768_A-12
+    │  │  ├─util
+    │  │  │  └─__pycache__
+    │  │  └─__pycache__
+    │  ├─3_dict
+    │  │  ├─bert
+    │  │  │  └─__pycache__
+    │  │  ├─data
+    │  │  │  └─JB
+    │  │  ├─model
+    │  │  │  ├─bert
+    │  │  │  └─chinese_L-12_H-768_A-12
+    │  │  ├─util
+    │  │  │  └─__pycache__
+    │  │  └─__pycache__
+    │  ├─4_dict
+    │  │  ├─bert
+    │  │  │  └─__pycache__
+    │  │  ├─data
+    │  │  │  └─JB
+    │  │  ├─model
+    │  │  │  ├─bert
+    │  │  │  └─chinese_L-12_H-768_A-12
+    │  │  ├─util
+    │  │  │  └─__pycache__
+    │  │  └─__pycache__
+    │  └─5_dict
+    │      ├─bert
+    │      ├─data
+    │      │  └─JB
+    │      ├─model
+    │      │  ├─bert
+    │      │  └─chinese_L-12_H-768_A-12
+    │      ├─util
+    │      │  └─__pycache__
+    │      └─__pycache__
+    └─ICD10
+        ├─1_dict
+        │  ├─bert
+        │  │  └─__pycache__
+        │  ├─data
+        │  │  └─JB
+        │  ├─model
+        │  │  ├─bert
+        │  │  └─chinese_L-12_H-768_A-12
+        │  ├─util
+        │  │  └─__pycache__
+        │  └─__pycache__
+        ├─2_dict
+        │  ├─bert
+        │  │  └─__pycache__
+        │  ├─data
+        │  │  └─JB
+        │  ├─model
+        │  │  ├─bert
+        │  │  └─chinese_L-12_H-768_A-12
+        │  ├─util
+        │  │  └─__pycache__
+        │  └─__pycache__
+        ├─3_dict
+        │  ├─bert
+        │  │  └─__pycache__
+        │  ├─data
+        │  │  └─JB
+        │  ├─model
+        │  │  ├─bert
+        │  │  └─chinese_L-12_H-768_A-12
+        │  ├─util
+        │  │  └─__pycache__
+        │  └─__pycache__
+        ├─4_dict
+        │  ├─bert
+        │  │  └─__pycache__
+        │  ├─data
+        │  │  └─JB
+        │  ├─model
+        │  │  ├─bert
+        │  │  └─chinese_L-12_H-768_A-12
+        │  ├─util
+        │  │  └─__pycache__
+        │  └─__pycache__
+        └─5_dict
+            ├─bert
+            │  └─__pycache__
+            ├─data
+            │  └─JB
+            ├─model
+            │  ├─bert
+            │  └─chinese_L-12_H-768_A-12
+            ├─util
+            │  └─__pycache__
+            └─__pycache__
+```
 
 # Basic experiment
 The code for thirteen basic model experiments is published<br>
