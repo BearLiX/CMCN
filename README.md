@@ -2,7 +2,7 @@
 This is the code and data for our paper：“Chinese Medical Concept Normalization Using Continual Learning and Knowledge-Enhanced” This research involves three tasks altogether, and the code used in each task has been given the corresponding web disk link.
 
 # Requirements
-We have a requirements.txt file in each code download link, which allows you to run the following code after downloading：
+We have a requirements.txt file in each code download link, which allows you to run the following code after downloading：<br>
       * pip install -r requirements.txt
 
 # Basic experiment
